@@ -4,6 +4,7 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    cursor: default;
 }
 
 #calculator {
@@ -15,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
+    height: 475px;
     width: 300px;
     background-color:#152238;
     border-radius: 25px;
@@ -37,6 +38,9 @@ body {
     height: 50px;
     align-self: center;
     justify-self: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
 }
 
 #buttoncontainer {
@@ -64,7 +68,12 @@ body {
     display: flex;
 }
 
-.numbutton {
+#rowfive {
+    display: flex;
+}
+
+.numbutton, 
+#clearbutton{
     color: white;
     height: 55px;
     width: 55px;
@@ -79,6 +88,7 @@ body {
 
 #equals {
     background-color: #FF5349;
+    width: 120px;
 }
 
 .operation {
@@ -92,4 +102,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+}
+
+#thezero {
+    width: 120px;
 }
